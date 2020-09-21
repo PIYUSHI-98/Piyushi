@@ -1,6 +1,7 @@
 body{
-	margin:0px auto;
-	width:100%;
+	margin:auto;
+	max-width:100%;
+	padding: 0px;
 
 }
 nav ul li{
@@ -24,8 +25,10 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 }
-section{
+.temp{
 	background-color: #8d93ab;
+	max-width: 100%;
+	margin: auto;
 }
 
 .home{
@@ -37,7 +40,7 @@ section{
 	height: 100vh;
 	width: 100%;
 }
-.inner_home{
+.home .inner_home{
 display: table-cell;
 vertical-align: middle;
 
@@ -153,7 +156,7 @@ vertical-align: middle;
 	background-color: #ad9d9d;
 }
 
-.certificates .inner, .workshops .inner,{
+.certificates .inner, .workshops .inner{
 	padding: 50px;
 }
 
@@ -226,4 +229,37 @@ vertical-align: middle;
 .contacts .inner p a{
 	text-decoration: none;
 	color: white;
+}
+
+
+@media(min-width: 320px)and (max-width: 767px){
+	.home .inner img{
+		padding-top: 75px;
+	}
+	.about .inner{
+		width: 90%;
+		padding: 25px;
+	}
+	#about{
+		background:#cce5ff ;
+		background-size: 100%;
+	}
+	.about .inner p{
+
+		font-size: 18px;
+		text-align: justify-all;
+	}
+	.certifiates .inner div,.projects .inner div,.workshops .inner div,.education .inner div, .hobbies .inner div, .skills .inner div{
+		width: 100%;
+		font-size: 8px;
+	}
+	.hobbies .inner div{
+		border-bottom: :5px solid black;
+	}
+	.skills .inner div ul{
+		font-size: 12px;
+	}
+	.workshops .inner ul img{
+	height: 300px;
+	width: 100%;
 }
